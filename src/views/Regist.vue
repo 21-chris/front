@@ -1,23 +1,23 @@
 <template>
   <div class="hello">
     <div class="box">
-      <div class="f2" style = 'width: 300px;height: 300px;border: 1px solid salmon;'>
+      <div class="f5">注册页面</div>
+
+      <div class="f5" style = 'width: 300px;height: 300px;border: 1px solid salmon;'>
         <div class="box">
-          <div class="f1" >昵称</div>
-          <el-input class="f4" 
-          v-model="username" placeholder="请输入内容"></el-input>
+          <n-input-group-label class="f1" >昵称</n-input-group-label>
+          <n-input class="f4" 
+          v-model="username" placeholder="请输入内容"></n-input>
         </div>
         <div class="box">
-          <div class="f1">密码</div>
-          <el-input class="f4" v-model="password" placeholder="请输入内容"></el-input>
+          <div class="f1 boxColumnCenter" >密码</div>
+          <n-input class="f4" v-model="password" placeholder="请输入内容"></n-input>
         </div>
         <div >
-          <el-button @click = "regist('regist')">注册</el-button>
-          <el-button @click = "regist('login')">登陆</el-button>
+          <n-button @click = "regist('regist')">注册</n-button>
+          <n-button @click = "regist('login')">登陆</n-button>
         </div>
       </div>
-      <div class="f8">注册页面</div>
-
     </div>
     
   </div>
@@ -47,6 +47,7 @@ for(let i =0 ;i<=10;i++){
         id:j,
         hang:`第${j}行`
       }
+      
     )
 
   }
